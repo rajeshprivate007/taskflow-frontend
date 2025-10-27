@@ -108,7 +108,7 @@ stages:
         echo "$(DOCKER_HUB_PASSWORD)" | docker login -u "$(DOCKER_HUB_USERNAME)" --password-stdin
 
         echo "Tagging image..."
-        docker tag myreactapp:$(Build.BuildId) $(DOCKER_HUB_USERNAME)/myreactapp:$(Build.BuildId)
+        docker tag taskflow-frontend:$(Build.BuildId) $(DOCKER_HUB_USERNAME)/taskflow-frontend:$(Build.BuildId)
 
         echo "Pushing image..."
         docker push $(DOCKER_HUB_USERNAME)/taskflow-frontend:$(Build.BuildId)
