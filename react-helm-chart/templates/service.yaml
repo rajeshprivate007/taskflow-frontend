@@ -10,7 +10,7 @@ spec:
     - port: {{ .Values.service.port }}
       targetPort: 3000
       port: 80
-      nodePort: 30080
+      nodePort: 30081
       protocol: TCP
       name: http
   selector:
