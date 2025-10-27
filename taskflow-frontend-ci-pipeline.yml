@@ -100,7 +100,7 @@ stages:
 
     - script: |
         echo "Building Docker image..."
-        docker build -t myreactapp:$(Build.BuildId) .
+        docker build -t taskflow-frontend:$(Build.BuildId) .
       displayName: "Build Docker Image"
 
     - script: |
