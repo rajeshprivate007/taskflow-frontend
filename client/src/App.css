@@ -1,0 +1,8 @@
+
+.user-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40vh 0 0 0;
+}
