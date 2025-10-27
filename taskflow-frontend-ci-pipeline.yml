@@ -111,7 +111,7 @@ stages:
         docker tag myreactapp:$(Build.BuildId) $(DOCKER_HUB_USERNAME)/myreactapp:$(Build.BuildId)
 
         echo "Pushing image..."
-        docker push $(DOCKER_HUB_USERNAME)/myreactapp:$(Build.BuildId)
+        docker push $(DOCKER_HUB_USERNAME)/taskflow-frontend:$(Build.BuildId)
       displayName: "Push Docker Image"
       env:
         DOCKER_HUB_USERNAME: $(DOCKER_HUB_USERNAME)
